@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<title>Bookstore by Joonas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> 
+</head>
+<body>
+    <h1>Bookstore & Booklist</h1><br>
+    <form action ="#" th:action="@{/index}" th:object="{Books}" method="get">
+
+    <p class="table table-striped">Author: <input type="text" th:field="*{name}"/></p>
+    <p class="table table-striped">Title: <input type="text" th:field="*{title}"/></p>
+    <p class="table table-striped">Author: <input type="number" th:field="*{ISBN}"/></p>
+    <p class="table table-striped">Author: <input type="number" th:field="*{Year}"/></p>
+    <p class="btn btn-success"><input type="submit"value="Submit"></p></form>
+</body>
+</html>
