@@ -15,10 +15,10 @@ import com.example.demo.content.Books;
 @Controller
 public class BookController {
 
-  @GetMapping("/index")
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
   public String indexModel(Model model) {
     model.addAttribute("book", new Books());
-    return "book";
+    return "index";
   }
 
   @PostMapping("/hello")
